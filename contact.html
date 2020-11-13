@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="3D Viewer" />
+    <title>Pluvia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/svg" href="images/favicon.svg">
+   
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript">
+        var frmvalidator  = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("email","email",
+          "Please enter a valid email address");
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/pluvia_logo.svg" alt="Pluvia company logo">
+                </a>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li class="homebutton">home</li>
+                </a><br>
+                <a href="about.html">
+                    <li class="button1">about</li>
+                </a><br>
+                <a href="portfolio.html">
+                    <li class="button2">portfolio</li>
+                </a><br>
+                <a href="contact.html">
+                    <li class="button3">contact</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="center">
+            <h1>contact us</h1>
+            <div class="centermain">
+                <form method="post" name="contact_form"
+                action="contact-form-handler.php">
+                Name:
+                <input type="text" name="name" class="form_entry"><br>
+
+                Email:
+                <input type="text" name="email" class="form_entry"><br>
+
+                Message:
+                <textarea name="message" id="message_entry"></textarea>
+
+                <input type="submit" value="Submit" class="submitbutton">
+                </form>
+            </div>	
+
+           
+
+        </div>
+    </div>
+</body>
+</html>
